@@ -9,6 +9,7 @@ import Listings from "./components/listings/Listings";
 import Dashboard from "./components/dashboard/Dashboard";
 import NewListingForm from "./components/NewListing/NewListingForm";
 import Analytics from "./components/analytics/Analytics";
+import Profile from "./components/profile/Profile";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/new-listing" element={<NewListingForm />} />
           <Route path="/analytics" element={<Analytics />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </AuthProvider>
     </Router>
