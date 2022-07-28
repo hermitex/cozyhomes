@@ -189,7 +189,7 @@ console.log(currentUser)
         <Button type="submit">Sign Up</Button>
         <div>
           <span>Have an account? </span>
-          <Link to="/Login">Sign In</Link>
+          <Link to="/login">Sign In</Link>
         </div>
       </Form>
     </>
