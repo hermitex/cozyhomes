@@ -105,7 +105,7 @@ const Navigation = (args) => {
                   <hr className="dropdown-divider" />
                 </li>
                 <li className="nav-item">
-                  <NavLink className="nav-link" to="logout">
+                  <NavLink className="nav-link" to="login">
                     <i className="fa-solid fa-right-from-bracket"></i>Logout
                   </NavLink>
                 </li>
