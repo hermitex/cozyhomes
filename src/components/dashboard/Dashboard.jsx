@@ -36,21 +36,17 @@ function Dashboard() {
           </Row>
           <Row>
             <Col md={6}>
-              <Col
-                md={12}
-               
-              
-              >
-                <div style={{ width: "100%",borderRadius: "0.5rem" }}  className="bg-light">
+              <Col md={12}>
+                <div
+                  style={{ width: "100%", borderRadius: "0.5rem" }}
+                  className="bg-light"
+                >
                   <ul
                     className="list-unstyled d-flex justify-content-between p-2"
                     style={{ width: "100%" }}
                   >
+                    <li>My Listings</li>
                     <li>
-                      My Listings
-                    </li>
-                    <li>
-            
                       <Link to="/new-listing">
                         <Button>Add New Listing</Button>
                       </Link>
@@ -66,20 +62,16 @@ function Dashboard() {
             </Col>
 
             <Col md={6}>
-              <Col
-                md={12}
-                
-          
-              >
-                <div style={{ width: "100%",borderRadius: "0.5rem" }} className="bg-light">
+              <Col md={12}>
+                <div
+                  style={{ width: "100%", borderRadius: "0.5rem" }}
+                  className="bg-light"
+                >
                   <ul
                     className="list-unstyled d-flex justify-content-between p-2"
                     style={{ width: "100%" }}
                   >
-                    <li>
-                      {" "}
-                      Latest Blog
-                    </li>
+                    <li>Latest Blog</li>
                     <li>
                       <Link to="/new-listing">
                         <Button>Add New Blog</Button>
@@ -109,22 +101,6 @@ function Dashboard() {
                 </Card>
               </Col>
               <Col md={12}>
-              <div style={{ width: "100%",borderRadius: "0.5rem" }} className="bg-light">
-                  <ul
-                    className="list-unstyled d-flex justify-content-between p-2"
-                    style={{ width: "100%" }}
-                  >
-                    <li>
-                      Stats
-                    </li>
-                    <li>
-                      <ul className="list-unstyled">
-                        <li>Last Updated</li>
-                        <li>{new Date().toLocaleDateString()}</li>
-                      </ul>
-                    </li>
-                  </ul>
-                </div>
                 <WidgetStat />
               </Col>
             </Col>

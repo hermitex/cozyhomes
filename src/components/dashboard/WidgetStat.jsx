@@ -32,7 +32,17 @@ function WidgetStat() {
             width: "100%",
           }}
         >
-          <li>Listings summary</li>
+          <li>
+          <ul className="list-unstyled">
+            <li>Listings Summary</li>
+            <li>
+              <small className="text-muted">
+                Last Updated {new Date().toLocaleDateString()}
+              </small>
+            </li>
+          </ul>
+          </li>
+         
           <li>
             <Link to="/analytics">
               <Button>
@@ -82,7 +92,7 @@ function WidgetStat() {
         <Col md={6}>
           <Col md={12}>
             <List>
-              <li>SIngle Family Home</li>
+              <li>Single Family Home</li>
               <li>Attached House, Town House</li>
               <li>Apartment, Condo</li>
               <li>Commercial Property</li>

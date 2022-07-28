@@ -46,17 +46,17 @@ function Widget() {
             <li>
               <i class="fa-solid fa-rectangle-list"></i>
               <small>My Listings</small>
-              <h2>{689}</h2>
+              <h4>{689}</h4>
             </li>
             <li>
               <i class="fa-solid fa-eye"></i>
               <small>Listings Views</small>
-              <h2>{10000} </h2>
+              <h4>{10000} </h4>
             </li>
             <li>
               <i class="fa-solid fa-hand-holding-dollar"></i>
               <small> Revenue</small>
-              <h2>{5000000} </h2>
+              <h4>{5000000} </h4>
             </li>
           </ul>
         
