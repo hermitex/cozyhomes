@@ -1,6 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { Card, CardBody, Col, Row, List, CardSubtitle, Button } from "reactstrap";
+import {
+  Card,
+  CardBody,
+  Col,
+  Row,
+  List,
+  CardSubtitle,
+  Button,
+} from "reactstrap";
 import ListingsSummaryChart from "../charts/ListingsSummaryChart";
 
 function WidgetStat() {
@@ -25,7 +34,11 @@ function WidgetStat() {
         >
           <li>Listings summary</li>
           <li>
-         <Button>Go to analytics<i class="fa-solid fa-chevron-right"></i></Button> 
+            <Link to="/analytics">
+              <Button>
+                Go to analytics<i class="fa-solid fa-chevron-right"></i>
+              </Button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -44,17 +57,17 @@ function WidgetStat() {
             }}
           >
             <li>
-            <i class="fa-solid fa-globe"></i>
+              <i class="fa-solid fa-globe"></i>
               <small>Total</small>
               <h2>{689}</h2>
             </li>
             <li>
-            <i class="fa-solid fa-money-bill-trend-up"></i>
+              <i class="fa-solid fa-money-bill-trend-up"></i>
               <small>Average price range</small>
               <h2>{10000} </h2>
             </li>
             <li>
-            <i class="fa-solid fa-cloud-arrow-up"></i>
+              <i class="fa-solid fa-cloud-arrow-up"></i>
               <small> Uploads</small>
               <h2>{5000000} </h2>
             </li>
@@ -63,7 +76,6 @@ function WidgetStat() {
       </CardBody>
       <CardSubtitle>Structure of Listings</CardSubtitle>
       <Row>
-       
         <Col md={6}>
           <ListingsSummaryChart />
         </Col>
@@ -77,7 +89,7 @@ function WidgetStat() {
               <li>Estate</li>
               <li>Land Plot</li>
             </List>
-          </Col>          
+          </Col>
         </Col>
       </Row>
     </Card>

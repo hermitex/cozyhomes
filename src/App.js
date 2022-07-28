@@ -7,6 +7,8 @@ import Home from "./components/home/Home";
 import Navigation from "./components/navigation/Navigation";
 import Listings from "./components/listings/Listings";
 import Dashboard from "./components/dashboard/Dashboard";
+import NewListingForm from "./components/NewListing/NewListingForm";
+import Analytics from "./components/analytics/Analytics";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/login" element={<Login />} />.
           <Route path="/listings" element={<Listings />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/new-listing" element={<NewListingForm />} />
+          <Route path="/analytics" element={<Analytics />} />
         </Routes>
       </AuthProvider>
     </Router>

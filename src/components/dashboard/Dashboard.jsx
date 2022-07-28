@@ -16,6 +16,7 @@ import Media from "./Media";
 import Widget from "./Widget";
 import WidgetStat from "./WidgetStat";
 import Profile from "../profile/Profile";
+import { Link } from "react-router-dom";
 
 function Dashboard() {
   const [listings] = useFetch("http://localhost:8002/properties");
@@ -39,7 +40,9 @@ function Dashboard() {
                 <div>
                   <ul className="unstyled-list d-flex">
                     <h2>My Listings</h2>
-                    <Button>Add New Listing</Button>
+                    <Link to="/new-listing">
+                      <Button>Add New Listing</Button>
+                    </Link>
                   </ul>
                 </div>
 
@@ -55,7 +58,10 @@ function Dashboard() {
                 <div>
                   <ul className="unstyled-list d-flex">
                     <h2>Latest Blog</h2>
-                    <Button>Add New Blog</Button>
+                    <Link to="/new-listing">
+                    
+                      <Button>Add New Blog</Button>
+                    </Link>
                   </ul>
                 </div>
                 <Card

@@ -5,8 +5,6 @@ import {
   CardSubtitle,
   CardTitle,
   CardBody,
-  Button,
-  CardText,
   ListGroup,
   ListGroupItem,
 } from "reactstrap";
@@ -23,7 +21,7 @@ function Listing({ listing }) {
         }}
       >
         <img
-          id="listing-image"
+          id="listing-img"
           alt="Card image"
           src="https://picsum.photos/300/200"
         />
