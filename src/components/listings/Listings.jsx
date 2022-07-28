@@ -13,7 +13,7 @@ function Listings() {
         className="d-flex  just-content-center mt-5"
         style={{ height: 100 + "vh" }}
       >
-        <Row>
+        <Row md={4}>
           {listings &&
             listings.map((listing) => (
               <Listing key={listing.id} listing={listing} />

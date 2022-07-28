@@ -3,8 +3,12 @@ function Media({ listing }) {
   return (
     <>
       <div
-        className="d-flex align-items-center bg-light mt-2"
-        style={{ width: "100%" }}
+        className="d-flex align-items-center bg-light mt-2 "
+        style={{
+          width: "100%",
+          borderBottom: "1rem solid #e5e5e5",
+          borderRadius: "0.5rem",
+        }}
       >
         <div className="flex-shrink-0">
           <img src="https://picsum.photos/150/150" alt="..." />
