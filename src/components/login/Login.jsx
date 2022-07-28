@@ -29,12 +29,12 @@ const validate = ({ password, email }) => {
 };
 
 function Login() {
-  let { Login, currentUser } = React.useContext(AuthContext);
+  let { login, currentUser } = React.useContext(AuthContext);
   const formik = useFormik({
     initialValues,
     onSubmit: (values) => {
       console.log(values);
-      Login(values);
+      login(values);
     },
     // validateSchema,
     validate,
@@ -82,6 +82,10 @@ function Login() {
         </Row>
 
         <Button type="submit">Sign In</Button>
+        {/* <div>
+          <Link to="/signup">Fogort password</Link>
+        </div> */}
+
         <div>
           <span>Don't an account? </span>
           <Link to="/signup">Signup</Link>
