@@ -81,8 +81,8 @@ function Dashboard() {
                 </div>
                 <Card
                   className="my-2"
-                  color="dark"
-                  inverse
+                  color="light"
+                //   inverse
                   style={{
                     width: "100%",
                   }}
