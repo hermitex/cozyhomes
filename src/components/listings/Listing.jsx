@@ -22,14 +22,14 @@ function Listing({ listing }) {
       >
         <img
           id="listing-img"
-          alt="Card image"
+          alt="Listing"
           src="https://picsum.photos/300/200"
         />
         <i className="fa-solid fa-heart" id="wish-icon"></i>
         <CardBody>
           <CardTitle tag="h5">
             <ul className="list-unstyled d-flex justify-content-between align-content-center">
-              <li>{listing.name}</li>
+              <li>{listing.listingName}</li>
               <li>
                 <i className="fa-solid fa-share-nodes"></i>
               </li>
@@ -37,11 +37,11 @@ function Listing({ listing }) {
           </CardTitle>
 
           <CardSubtitle className="mb-2 text-muted" tag="h6">
-            {listing.location}, {listing.county} county
+            {listing.location}, {listing.listingCounty} county
           </CardSubtitle>
 
           <CardSubtitle className="mb-2 text-light" tag="h6">
-            {listing.price}
+            {listing.listingPrice}
           </CardSubtitle>
           <ListGroup
             horizontal
@@ -58,7 +58,7 @@ function Listing({ listing }) {
               }}
             >
               <i className="fa-solid fa-bed"></i>
-              {listing.bedrooms}
+              {listing.numberOfBedrooms}
             </ListGroupItem>
             <ListGroupItem
               tag="a"
@@ -67,7 +67,7 @@ function Listing({ listing }) {
               }}
             >
               <i className="fa-solid fa-shower"></i>
-              {listing.bathrooms}
+              {listing.numberOfBathrooms}
             </ListGroupItem>
             <ListGroupItem
               tag="a"
@@ -75,7 +75,7 @@ function Listing({ listing }) {
                 width: "100%",
               }}
             >
-              <var>{listing.sqrt}</var>
+              <var>{listing.listingSize}</var>
               <sup>2</sup> ft
             </ListGroupItem>
           </ListGroup>

@@ -1,14 +1,18 @@
 import { useEffect, useState } from "react";
 
-function useFetch(url) {
+function useFetch(url, options = {}) {
   const [listings, setListings] = useState(null);
   useEffect(() => {
-    fetch(url, {})
+    fetch(url, options)
       .then((response) => response.json())
       .then((listings) => setListings(listings));
-  }, [url]);
+  }, [options, url]);
 
-  return [listings];
+  function accessor(url, options = {}) {
+    setListings(url, options);
+    return listings;
+  }
+  return [listings, accessor];
 }
 
 export default useFetch;
