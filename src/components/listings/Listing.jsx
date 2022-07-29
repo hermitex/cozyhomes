@@ -22,7 +22,7 @@ function Listing({ listing }) {
       >
         <img
           id="listing-img"
-          alt="Card image"
+          alt="Listing"
           src="https://picsum.photos/300/200"
         />
         <i className="fa-solid fa-heart" id="wish-icon"></i>
@@ -75,7 +75,7 @@ function Listing({ listing }) {
                 width: "100%",
               }}
             >
-              <var>{listing.sqrt}</var>
+              <var>{listing.size}</var>
               <sup>2</sup> ft
             </ListGroupItem>
           </ListGroup>

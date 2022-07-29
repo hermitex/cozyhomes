@@ -8,7 +8,7 @@ function Profile() {
       width: "100%",
     }}
   >
-    <img alt="Card image" src="https://picsum.photos/300/200" />
+    <img alt="profile" src="https://picsum.photos/300/200"  style={{width: "150px", height: "150px", borderRadius: "100%", margin: "0 auto", marginTop: "0.5rem"}} />
     <CardBody>
       <CardTitle tag="h5">Jim Rock</CardTitle>
       <CardSubtitle className="mb-2 text-muted" tag="h6">
