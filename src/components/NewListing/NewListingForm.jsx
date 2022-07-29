@@ -52,7 +52,7 @@ function NewListingForm() {
     fetch("http://localhost:8002/properties", options)
       .then((response) => response.json())
       .then((listing) => setlistingData(listing));
-    console.log(listingData);
+      window.location = '/listings';
   }
 
   return (
