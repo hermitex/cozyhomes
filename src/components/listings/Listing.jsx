@@ -17,13 +17,16 @@ function Listing({ listing }) {
         className="mb-3"
         inverse
         style={{
-          width: "100%",
+          width: "300",
+          height: "200",
         }}
       >
         <img
           id="listing-img"
           alt="Listing"
-          src="https://picsum.photos/300/200"
+          src={listing.avatar_url}
+          // src="https://res.cloudinary.com/hng-pre-internship/image/upload/v1659078745/cozyhomes/assets/pexels-binyamin-mellish-106399_oo6qjq.jpg"
+       style={{width: "100%", height: "100%"}}
         />
         <i className="fa-solid fa-heart" id="wish-icon"></i>
         <CardBody>

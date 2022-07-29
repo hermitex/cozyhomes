@@ -7,28 +7,33 @@ import {
   CarouselCaption
 } from 'reactstrap';
 
+
+
 const items = [
   {
-    src: 'https://picsum.photos/id/123/1400/500',
+    // src: 'https://picsum.photos/id/123/1400/500',
+    src: 'https://res.cloudinary.com/hng-pre-internship/image/upload/v1659078713/cozyhomes/assets/pexels-curtis-adams-3288102_e48taa.jpg',
     altText: 'Slide 1',
     caption: 'Slide 1',
     key: 1
   },
   {
-    src: 'https://picsum.photos/id/456/1400/500',
+    // src: 'https://picsum.photos/id/456/1400/500',
+    src: 'https://res.cloudinary.com/hng-pre-internship/image/upload/v1659078738/cozyhomes/assets/pexels-pixabay-259588_lxohqz.jpg',
     altText: 'Slide 2',
     caption: 'Slide 2',
     key: 2
   },
   {
-    src: 'https://picsum.photos/id/678/1400/500',
+    // src: 'https://picsum.photos/id/678/1400/500',
+    src:'https://res.cloudinary.com/hng-pre-internship/image/upload/v1659078744/cozyhomes/assets/pexels-terry-magallanes-3623770_nfcnba.jpg',
     altText: 'Slide 3',
     caption: 'Slide 3',
     key: 3
   }
 ];
 
-const Jumbotron = (args) => {
+const Slide = (args) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const [animating, setAnimating] = useState(false);
 
@@ -55,8 +60,11 @@ const Jumbotron = (args) => {
         onExiting={() => setAnimating(true)}
         onExited={() => setAnimating(false)}
         key={item.src}
+        
       >
-        <img src={item.src} alt={item.altText} style={{width:'100vw'}}/>
+        
+        <img src={item.src} alt={item.altText} style={{width:'100%', height: '70vh', borderRadius: '5rem'}}/>
+    
         <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
       </CarouselItem>
     );
@@ -77,4 +85,4 @@ const Jumbotron = (args) => {
   );
 }
 
-export default Jumbotron;
+export default Slide;
