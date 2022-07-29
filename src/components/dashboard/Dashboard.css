@@ -14,3 +14,11 @@ i#wish-icon {
   font-size: 1.5rem;
   right: 0;
 }
+
+i {
+  color: rgb(235, 178, 72);
+}
+
+i:hover {
+  color: orange;
+}
